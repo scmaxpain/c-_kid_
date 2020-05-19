@@ -1,0 +1,32 @@
+# include <stdio.h>
+
+unsigned long long fibonacci (unsigned int n);
+
+int main ()
+{
+	unsigned long long int result; 
+	
+	unsigned int number;
+	 
+	printf("%s","Enter any of fibonnaci series : ");
+	scanf("%u",&number);
+
+	result = fibonacci(number);
+
+	printf("Fibonnaci of (%u) number is : %llu",number , result);
+
+}
+unsigned long long fibonacci (unsigned int n){
+	
+	if(0==n || 1==n){
+		return n;
+	}
+	else{
+		
+		printf("Hello");
+		return fibonacci(n-1)+ fibonacci(n-2);
+	}
+	
+}
+
+
